@@ -1,0 +1,146 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="infotechit.Site1" %>
+
+<!DOCTYPE html>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
+<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+<html>
+
+<head runat="server">
+    <title>infotechit</title>
+      <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+          .navbar {
+           
+            background-color:#1e4485;
+          }
+          .navbar-nav a {
+            color:white;
+          }
+     
+          body, head {
+          font-family: 'Hind Siliguri', sans-serif;
+
+          }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="auto-style1">
+        <tr>
+            <td>
+                 <a href="Default.aspx"><asp:Image ID="infotechLogo" runat="server" Height="75px" ImageAlign="Left" ImageUrl="~/images/infotechit.png"/></a>
+              <div class="text-right"> &nbsp;Email- <a href="mailto:info@infotechit.co.nz">info@infotechit.co.nz</a><br />
+                  Phone- 022-160- 6306 </div></td>
+            </tr>
+            <tr>
+              <td>
+                     <nav class="navbar navbar-expand-lg">
+  
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                   <li class="nav-item active">
+                    <a class="nav-link" href="Default.aspx">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Services.aspx">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Store.aspx">Store</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.aspx">Contact us</a>
+                  </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="StoreAdmin.aspx">Admin</a>
+                 </li>
+                    <li class="nav-item">
+                   <a class="nav-link" href="Login.aspx">Login</a>
+                 </li>
+      
+           </ul>
+          </div>
+          </nav>
+              
+                            
+               
+ 
+            </td>
+        </tr>
+        <tr>
+            <td>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                 <p>
+                     Body</p>
+            </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+     <img src="images/smalllogo.png" height="40" width="110">
+    </div>
+    <div class="col-6 col-md">
+      <h5>Services</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Contact us</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Products</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+            </td>
+        </tr>
+    </table>
+     
+        <div>
+        </div>
+    </form>
+</body>
+</html>
